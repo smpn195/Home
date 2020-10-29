@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-witdh, initial-scale=1.0">
@@ -88,7 +88,7 @@ img{
 .section-title{
 	position: relative;
 	font-size:  var(--h2-font-size);
-	color: #000;
+	color: #fff;
 	margin-top: var(--mb-2);
 	margin-bottom: var(--mb-4);
 	text-align: center;
@@ -102,7 +102,7 @@ img{
 	right: 0;
 	margin: auto;
 	top: 2rem;
-	background-color: #000;
+	background-color: var(--firs-color);
 
 }
 .section{
@@ -136,7 +136,7 @@ img{
 .label-title{
 	position: relative;
 	font-size:  1.2rem;
-	color: #000;
+	color: #fff;
 	margin-top: var(--mb-2);
 	margin-bottom: var(--mb-4);
 	text-align: center;
@@ -150,7 +150,7 @@ img{
 	right: 0;
 	margin: auto;
 	top: 2rem;
-	background-color: #000;
+	background-color: var(--firs-color);
 
 }
 .label{
@@ -166,7 +166,64 @@ img{
 	margin-left: var(--mb-2);
 	margin-right: var(--mb-2);
 }
+.nav{
+	height: var(--header-height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: var(--font-semi);
+	width: 100%;
+	background-color: var(--second-color);
+	
+}
+.nav_link:hover{
+	color: #fff;
+}
+.nav_link1{
+	color: #fff;
+	font-size: 1.1rem;
+	
+}
+.nav_link1:hover{
+	text-decoration: none;
+	color: #fff;
+}
 
+@media screen and (max-width: 768px){
+	.nav_menu{
+		position: fixed;
+		top: var(--header-height);
+		right: 0;
+		width: 80%;
+		height: 100%;
+		padding: 2rem;
+		background-color: #111;
+		transition: .5s;
+		color: #fff;
+		display: none;
+	}
+	.nav_logo{
+		color: #fff;
+		font-size: 1.3rem;
+		padding: 20px;
+
+	}
+	.nav_toggle{
+		color: #fff;
+		font-size: 1.7rem;
+		float: left;
+	}
+	.nav_link{
+		font-size: 1.1rem;
+	}
+}
+.nav_item{
+	margin-bottom: var(--mb-4);
+}
+.nav_link{
+	position: relative;
+	color: #fff;
+}
 
 .galeri li{
 	height: 100px;
@@ -187,7 +244,8 @@ img{
 	height:19px;
 }
 #about{
-	background-color:#20B2AA;
+	background-color:#2F4F4F;
+	color: #fff;
 }
 .about_container{
 	grid-row-gap: 2rem;
@@ -227,7 +285,7 @@ img{
 }
 .topnav {
   overflow: hidden;
-  background-color: #e9e9e9;
+  background-color: #fff;
 }
 
 
@@ -301,9 +359,24 @@ img{
   transition: 1s;
 
 }
-
+	.nav_logo:hover{
+		color: #fff;
+	}
 	.footer_kalimat{
 		text-align: center;
+	}
+	.nav ul li .dropdown{
+		display: none;
+	}
+	.nav ul li:hover .dropdown{
+		display:inline-block;
+		background-color: var(--second-color);
+		position: absolute;
+		padding: 10px;
+	}
+	.dropdown a{
+		color: #fff;
+
 	}
 }
 
@@ -314,7 +387,9 @@ img{
 	.title_sekolah{
 	text-align: left;
 	}
-	
+	.l-header{
+		margin-bottom: 20px;
+	}
 	
 	.section{
 		padding-top: 4rem;
@@ -339,6 +414,53 @@ img{
 	.section-title::after{
 		width: 100px;
 		top: 3rem;
+	}
+	.nav{
+		height: 60px;
+	}
+
+	.nav ul li .dropdown{
+		display: none;
+	}
+	.nav ul li:hover .dropdown{
+		display: block;
+		background-color: var(--second-color);
+		position: absolute;
+		padding: 10px;
+	}
+	.dropdown a{
+		color: #fff;
+	}
+	.nav_list{
+		display: flex;
+		padding-top: 0;
+	}
+	.nav_item{
+		margin-left: var(--mb-6);
+		margin-bottom: 0;
+		margin-right: -25px;
+	}
+	
+	.nav_link{
+		text-align: right;
+		width: 70px;
+	}
+	.nav_toggle{
+		display: none;
+	}
+	
+	.nav_logo{
+		color: #fff;
+		font-size: 1.3rem;
+		padding: 20px;
+	}
+	.nav_logo:hover{
+		text-decoration: none;
+		color: #fff;
+	}
+	.nav_link1{
+		text-decoration: none;
+		display: none;
 	}
 	.info{
 		padding-top: 4rem;
@@ -404,7 +526,7 @@ img{
 	}
 	.galeri li{
 	float: left;
-	margin: 17px;
+	display: none;
 }
 
 }
@@ -436,30 +558,8 @@ img{
  background-color:  #ff7518;
   transition: .7s;
 }
-nav ul li{
-	float: right;
-	display: block;
-	background: none;
-}
-nav ul li a{
-	
-    width:100px;
-    color:#000;
-    text-decoration:none;
-    display:block;
-    text-align:center;
-    margin-left:20px;
-    font-weight: bold;
-    left: 50px;
-    
-}
-nav ul li a:hover {
-    background-color:#0081D9;
-    display:block;
-    transition: .7s;
-    color: #fff;
 
-}
+
 .galery_img{
 	box-shadow: 0 4px 20px rgba(14,36,49,.15);
 	border-radius: .5rem;
@@ -475,7 +575,7 @@ nav ul li a:hover {
 	transform: scale(1.3);
 }
 .footer{
-  background-color:#0081D9;
+  background-color:#2F4F4F;
   color: #fff;
   width: 100%;
   height:10%;
@@ -495,11 +595,11 @@ nav ul li a:hover {
 		font-size: 1.3rem;
 	}
 	.footer2{
-		background-color:#ff7518;
+		background-color: var(--second-color);
 		width: 100%;
 		height: 100px;
 		padding: 2rem 0;
-		color: #000;
+		color: #fff;
 		font-size: 1.1rem;
 		text-align: center;
 	}
@@ -508,39 +608,42 @@ nav ul li a:hover {
 <link rel="icon"href="https://pbs.twimg.com/profile_images/505271722115731457/xyLWcKAi.jpeg">
 </head>
 <body>
-	<header class="l-header" style="">
-		
-	<nav class="navbar  fixed-top navbar-expand-lg " id="nav" style="background-color:#ff7518; color: #000;">
-  <a class="navbar-brand" href="#" style="color: #000;">SMP 195</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" >
-    <span class="navbar-toggler-icon"><i class='bx bx-menu' style="color: #000; font-size: 2rem;"></i></span>
-  </button>
-<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      
-     
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Fasilitas<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Alumni<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Member<span class="sr-only">(current)</span></a>
-      </li>
-    <li class="nav-item active">
-        <a class="nav-link" href="#">Galery<span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-    
-  </div>
-</nav>
+<header class="l-header fixed-top">
+	<nav class="nav" >
+		<div>
+			<a href="login.html" class="nav_logo">Smpn 195</a>
+		</div>
 
-</header>
-<div class="topnav"><br>
+		<div class="nav_menu" id="nav">
+			<ul class="nav_list">
+				<li class="nav_item" id="hide"><a href="" class="nav_link active">Beranda</a></li>
+				<li class="nav_item" id="hide"><a href="#" class="nav_link">Fasilitas</a></li>
+				<li class="nav_item" id="show"><a href="#" class="nav_link">Member</a><i class='bx bxs-chevron-down'></i>
+					<ul class="dropdown">
+						<li><a href="#">Guru</a></li>
+						<li><a href="#">karyawan</a></li>
+					</ul>
+				</li>
+				<li class="nav_item" id="show"><a href="#" class="nav_link">Alumni</a><i class='bx bxs-chevron-down'></i>
+					<ul class="dropdown">
+						<li><a href="#">2019-2020</a></li>
+						<li><a href="#">2018-2019</a></li>
+					</ul>
+				</li>
+				<li class="nav_item" id="hide"><a href="#" class="nav_link">Galery</a></li>
+				<li class="nav_item" id="hide"><a href="#" class="nav_link1">Profil</a></li>
+				<li class="nav_item" id="hide"><a href="#" class="nav_link1">kontak</a></li>
+				<li class="nav_item" id="hide"><a href="login.html" class="nav_link1">Masuk</a></li>
+				<li class="nav_item" id="hide"><a href="registrasi.html" class="nav_link1">Daftar</a></li>
+			</ul>
+			
+		</div>
+		<button class="nav_toggle"  id="show" style="background-color: var(--second-color); border:20px;">
+			<i class='bx bx-menu'></i>
+		</button>		
+	</nav>
+</header>	
+<div class="topnav" id="navbar"><br>
 	<ul class="galeri">
 			<li>
 				<a href="">
@@ -548,7 +651,7 @@ nav ul li a:hover {
 				</a>
 			</li>
 		</ul>
-		<h3 class="title_sekolah" >SMPN 195 Jakarta Timur</h3>
+		<h3 class="title_sekolah">SMPN 195 Jakarta Timur</h3>
 <div class="search_container">
 	<div class="search-container">
     <form action="/action_page.php">
@@ -559,13 +662,6 @@ nav ul li a:hover {
 </div>		
   
 </div>
-<nav class="navbar1 navbar-light " id="bar" style="height: 50px; background-color: #0081D9;">
-  <a class="navbar-brand" href="#" id="kotak">
-  	<img src="https://img.icons8.com/android/24/000000/phone-disconnected.png" class="d-inline-block align-top" alt="" loading="lazy" id="gambar" />
-    <b class="text"  loading="lazy"  id="no-hp" style=" ">0857-9045-6093</b> | <img src="https://img.icons8.com/metro/26/000000/gmail-login.png"width="17" height="17" class="d-inline-block align-top" alt="" loading="lazy" id="gambar" /><b class="text"  loading="lazy"  style="">  smpn195jaktim@gmail.com</b> 
-  </a>
-</nav>
-<div class="garis garis_1"></div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -637,7 +733,7 @@ nav ul li a:hover {
 			
 			<div class="card d-inline-block align-top" alt="" loading="lazy" style="width: 18rem;" id="card"  >
 				<div class="galery_img">
-					<img src="G30SPkI.png" class="card-img-top" alt="..." width="100%"></div>
+					<img src="G30SPKI.png" class="card-img-top" alt="..." width="100%"></div>
   				
   				<div class="card-body">
     				<h5 class="card-title">SMPN 195 memperingati G30SPKI</h5>
@@ -666,10 +762,13 @@ nav ul li a:hover {
 				</div>
 			<div>
 			</div>
+		
+			
+		
 	</section>
 </main>
 <footer class="footer">
-	<div class="card d-inline-block align-top" alt="" loading="lazy" style="width: 18rem; background-color:#0081D9; border:3px solid #0081D9;" id="card">
+	<div class="card d-inline-block align-top" alt="" loading="lazy" style="width: 18rem; background-color:#2F4F4F; border:0px ;" id="card">
 				
   				
   				<div class="card-body">
@@ -697,7 +796,7 @@ nav ul li a:hover {
     			
   				</div>
 				</div>
-				<div class="card d-inline-block align-top" alt="" loading="lazy" style="width: 18rem;background-color:#0081D9; border:3px solid #0081D9;" id="card" >
+				<div class="card d-inline-block align-top" alt="" loading="lazy" style="width: 18rem;background-color:#2F4F4F; border:0px;" id="card" >
   				
   				<div class="card-body" >
     			<label class="label-title2">Hubungi Kami</label>
@@ -706,7 +805,7 @@ nav ul li a:hover {
 
   				</div>
 				</div>
-				<div class="card d-inline-block align-top" alt="" loading="lazy" style="width: 18rem; background-color:#0081D9; border:3px solid #0081D9;" id="card">
+				<div class="card d-inline-block align-top" alt="" loading="lazy" style="width: 18rem; background-color:#2F4F4F; border:0px;" id="card">
   				<div class="card-body">
     			<label class="label-title3" >Kunjungi Kami</label>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2475246814665!2d106.9095938198142!3d-6.231064282820981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f34ca1582141%3A0x1f9b6c14e9c13ff7!2sSekolah%20Menengah%20Pertama%20Negeri%20195%20Jakarta%20Timur!5e0!3m2!1sid!2sid!4v1602924431681!5m2!1sid!2sid" width="100%" frameborder="0" allowfullscreen style="border:3px solid #000;  height: 80%;" ></iframe>
@@ -716,11 +815,7 @@ nav ul li a:hover {
 		<a href="#"><img src="https://img.icons8.com/fluent/48/000000/gmail.png" class="d-inline-block align-top" alt="" loading="lazy"/>
 		</a>	
 	</div>
-  				</div>
-				</div>
-			<div>
-			</div>
-	
+ 		
 </footer>
 <div class="footer2">
 	<p>
@@ -731,9 +826,17 @@ nav ul li a:hover {
 
 
 
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $('#nav').toggle(5000);
+  });
+ 
+});
 
-  <script type="text/javascript"></script>
+</script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
