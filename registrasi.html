@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id"> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-witdh, initial-scale=1.0">
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Regristrasi</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<style type="text/css">
+		:root{
+	--header-height: 3rem;
+	--font-semi: 600;
+}
+
+/* colores ==*/
+:root{
+	--firs-color: #4070F4;
+	--second-color:#0E2431;
+}
+
+
+/* FUENTE Y TIPOGRAFIA */
+:root{
+	--body-font:'Poppins', sans-serif;
+	--big-font-size: 2rem;
+	--h2-font-size: 1.25rem;
+	--normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 768px){
+	:root{
+	--big-font-size: 3.5rem;
+	--h2-font-size: 2rem;
+	--normal-font-size: 1rem;
+	}
+}
+/* margenes == */
+:root{
+	--mb-1: 0.5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+}
+/* z index */
+:root{
+	--z-back: -10; 
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 100;
+}
+
+/* base */
+*,::before,::after{
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: var(--header-height) 0 0 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	color: var(--second-color);
+	 background:#000 url(https://i1.wp.com/dewankomputer.com/wp-content/uploads/2019/08/stars.png?resize=768%2C528&ssl=1) repeat top center;
+}	
+h1,h2,p{
+margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.tabel{
+	width: 350px;
+	/*meletakkan form ke tengah*/
+	margin: 80px auto;
+	padding: 30px 20px;
+	border-radius: 3px solid #000;
+}
+.form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;	
+}
+
+.button{
+	margin-bottom: 10px;
+	border: 20px;
+	background-color: #1E90FF;
+	width: 100%;
+	height: 39px;
+}
+
+.title{
+margin-left: 78px;
+color: #fff;
+font-size: 1.3rem;
+}
+.galeri li{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 3px;
+	margin: auto;
+	margin-bottom: 15px;
+}
+.date{
+	margin-bottom: 20px;
+}
+.gender{
+	margin-left: 7px;
+	color: #fff;
+}
+b{
+	margin-left: 5px;
+	color: #fff;
+}
+.footer{
+	text-align: center;
+	color: #f2f2f2;
+}
+</style>
+<link rel="icon"href="https://pbs.twimg.com/profile_images/505271722115731457/xyLWcKAi.jpeg">
+</head>
+<body>
+
+<div class="tabel">
+			<ul class="galeri">
+			<li>
+				<a href="">
+					<img src="user.png " width="100%" height="100%">
+				</a>
+			</li>
+		</ul>
+			<label class="title">Selamat Datang</label>
+				<input type="text" name="username" class="form_login" placeholder="Nama lengkap">
+				<input type="number" name="username" class="form_login" placeholder="Nomor Induk">
+				<input type="email" name="username" class="form_login" placeholder="Email">
+					<input type="username" name="username" class="form_login" placeholder="Username Baru">
+						<input type="password" name="username" class="form_login" placeholder="Password"><br>
+					<input type="password" name="password" class="form_login" placeholder="Konfirmasi Password"><br>
+				<label style="color:white;">Tanggal lahir</label><br>
+			<div class="date">
+				<input type="date" name="tanggal"/>
+						<input type="radio" name="jeniskelamin" value="pria" class="gender"><b>Pria</b>
+        			<input type="radio" name="jeniskelamin" value="wanita"class="gender"><b>Wanita</b>	
+			</div>
+			 
+			<input type="submit" name="login" value="Regristrasi" class="button"/><br>
+			<a href="login.html"style="color: #fff;">Masuk</a><b style="color: #fff;">  |  </b>
+			<a  href="login.html"  style="color: #fff;">Sudah punya akun ?</a>
+			
+
+</div>
+<footer class="footer">
+	<i>
+		Copyrigth &#169; 2020 by SMPN 195
+	</i>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
